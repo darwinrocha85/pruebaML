@@ -57,9 +57,11 @@ public class FacturacionSB implements FacturacionSBLocal {
             Map<String, Float> items = new HashMap<String, Float>();
 
             for (String item : dto.getRequest().getItemIds()) {
-                price = this.getPrice(item);
-                if (price <= amount) {
-                    items.put(item, price);
+                if (!items.containsKey(item)) {
+                    price = this.getPrice(item);
+                    if (price <= amount) {
+                        items.put(item, price);
+                    }
                 }
             }
             dto.setItemsML(items);
