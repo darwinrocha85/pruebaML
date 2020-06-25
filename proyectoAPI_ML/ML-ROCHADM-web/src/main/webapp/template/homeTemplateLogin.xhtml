@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <!-- METADATA -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+        <meta name="description" content="darwin"/>
+        <meta name="author" content="rocha darwin"/>
+        <meta name="keywords" content="pruebas"/>
+
+        <!-- TITLE - FAVICON -->
+        <title>Darwin Rocha</title>
+    
+        <!-- MDL CSS -->
+        <h:outputStylesheet name="material.css" library="css"/>
+        <h:outputStylesheet name="theme-red-mdl.css" library="css"/>
+
+        <!-- Master Edit Only This CSS -->
+        <h:outputStylesheet name="master.css" library="css"/>
+    </h:head>
+    <h:body>
+        <h:form prependId="false" >
+            <div style="overflow-y: hidden" class="mdl-layout mdl-js-layout mdl-layout--fixed-header height-100vh">
+                <header class="mdl-layout__header">
+                    <div class="mdl-layout__header-row bar">
+                        <div class="mdl-grid wrapper centrar-vert-hrz">
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--8-col-phone text-center">
+                                <span class="mdl-layout-title">
+                                    
+
+                                </span>
+                            </div>
+            
+                        </div>
+                    </div>
+                </header>
+
+                <ui:insert name="content"/>
+            </div>
+        </h:form>
+    </h:body>
+</html>

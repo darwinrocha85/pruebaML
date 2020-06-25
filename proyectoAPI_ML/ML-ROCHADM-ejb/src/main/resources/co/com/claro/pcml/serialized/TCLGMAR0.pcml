@@ -1,0 +1,14 @@
+<pcml version="4.0">                                                            
+   <!-- RPG program: TCLGMAR0  -->                                              
+   <!-- created: 2015-06-24-11.43.27 -->                                        
+   <!-- source: TVCABLESRC/TVPCMLSRC(TCLGMAR0) -->                              
+   <!-- 32 -->                                                                  
+   <program name="$_ENTRY" path="/QSYS.LIB/TVCABLEEXE.LIB/TCLGMAR0.PGM">        
+      <data name="CUENTAP" type="char" length="8" usage="inputoutput" />        
+      <data name="REGINIP" type="char" length="7" usage="inputoutput" />        
+      <data name="REGFINP" type="char" length="7" usage="inputoutput" />        
+      <data name="DATOSP" type="char" length="330" count="20" usage="inputoutput" />
+      <data name="CODERRORP" type="char" length="5" usage="inputoutput" />      
+      <data name="MENSAJEP" type="char" length="33" usage="inputoutput" />      
+   </program>                                                                   
+</pcml>                                                                         
